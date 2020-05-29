@@ -11,7 +11,5 @@
   "profile": {
     "name": "typicode"
   },
-  "nodes": [
-    {"id": 1, "name": "Create VPC", "automoton": "TERRAFORM"}
-  ]
+  "nodes": {"id": 1, "name": "Create VPC", "automoton": "TERRAFORM"}
 }
