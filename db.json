@@ -1,8 +1,82 @@
 {
   "nodes": {
     "nodes": [
-      {"id": "node-001", "name": "Create VPC", "automoton": "TERRAFORM", "position": {"x": 10, "y": -10}},
-      {"id": "node-002", "name": "Create Subnet", "automoton": "ANSIBLE", "position": {"x": 300, "y": -300}}
-    ]   
+      {
+        "id": "node-001",
+        "name": "Create VPC",
+        "automoton": "TERRAFORM",
+        "position": {
+          "x": 10,
+          "y": -10
+        },
+        "ingressPorts": [
+          {
+            "id": "port-001",
+            "name": "In",
+            "type": "EXEC"
+          },
+          {
+            "id": "port-002",
+            "name": "Name",
+            "type": "STRING"
+          },
+          {
+            "id": "port-003",
+            "name": "CIDR",
+            "type": "STRING"
+          }
+        ],
+        "egressPorts": [
+          {
+            "id": "port-004",
+            "name": "Out",
+            "type": "EXEC"
+          },
+          {
+            "id": "port-005",
+            "name": "VPC",
+            "type": "OBJECT"
+          }
+        ]
+      },
+      {
+        "id": "node-002",
+        "name": "Create Subnet",
+        "automoton": "ANSIBLE",
+        "ingressPorts": [
+          {
+            "id": "port-006",
+            "name": "In",
+            "type": "EXEC"
+          },
+          {
+            "id": "port-007",
+            "name": "VPC",
+            "type": "OBJECT"
+          },
+          {
+            "id": "port-008",
+            "name": "CIDR",
+            "type": "STRING"
+          }
+        ],
+        "egressPorts": [
+          {
+            "id": "port-009",
+            "name": "Out",
+            "type": "EXEC"
+          },
+          {
+            "id": "port-010",
+            "name": "Subnet",
+            "type": "OBJECT"
+          }
+        ],
+        "position": {
+          "x": 300,
+          "y": -300
+        }
+      }
+    ]
   }
 }
