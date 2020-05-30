@@ -13,12 +13,16 @@
           {
             "id": "port-001",
             "name": "In",
-            "type": "EXEC"
+            "type": "EXEC",
+            "hasValue": false
           },
           {
             "id": "port-002",
             "name": "Name",
-            "type": "STRING"
+            "type": "STRING",
+            "hasValue": true,
+            "value": null,
+            "defaultValue": "myVPC"
           },
           {
             "id": "port-003",
