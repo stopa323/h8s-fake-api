@@ -21,25 +21,28 @@
             "name": "Name",
             "type": "STRING",
             "hasValue": true,
-            "value": null,
-            "defaultValue": "myVPC"
+            "value": "myVPC"
           },
           {
             "id": "port-003",
             "name": "CIDR",
-            "type": "STRING"
+            "type": "STRING",
+            "hasValue": true,
+            "value": "10.0.0.0/16"
           }
         ],
         "egressPorts": [
           {
             "id": "port-004",
             "name": "Out",
-            "type": "EXEC"
+            "type": "EXEC",
+            "hasValue": false
           },
           {
             "id": "port-005",
             "name": "VPC",
-            "type": "OBJECT"
+            "type": "OBJECT",
+            "hasValue": false
           }
         ]
       },
@@ -51,29 +54,35 @@
           {
             "id": "port-006",
             "name": "In",
-            "type": "EXEC"
+            "type": "EXEC",
+            "hasValue": false
           },
           {
             "id": "port-007",
             "name": "VPC",
-            "type": "OBJECT"
+            "type": "OBJECT",
+            "hasValue": false
           },
           {
             "id": "port-008",
             "name": "CIDR",
-            "type": "STRING"
+            "type": "STRING",
+            "hasValue": true,
+            "value": "10.0.0.0/24"
           }
         ],
         "egressPorts": [
           {
             "id": "port-009",
             "name": "Out",
-            "type": "EXEC"
+            "type": "EXEC",
+            "hasValue": false
           },
           {
             "id": "port-010",
             "name": "Subnet",
-            "type": "OBJECT"
+            "type": "OBJECT",
+            "hasValue": false
           }
         ],
         "position": {
