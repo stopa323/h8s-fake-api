@@ -1,8 +1,8 @@
 {
   "nodes": {
     "nodes": [
-      {"id": 1, "name": "Create VPC", "automoton": "TERRAFORM", "position": {"x": 10, "y": -10}},
-      {"id": 2, "name": "Create Subnet", "automoton": "ANSIBLE", "position": {"x": 300, "y": -300}}
+      {"id": "node-001", "name": "Create VPC", "automoton": "TERRAFORM", "position": {"x": 10, "y": -10}},
+      {"id": "node-002", "name": "Create Subnet", "automoton": "ANSIBLE", "position": {"x": 300, "y": -300}}
     ]   
   }
 }
