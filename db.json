@@ -1,6 +1,6 @@
 {
-  "nodes": {
-    "nodeDefinitions": [
+  "definitions": {
+    "nodes": [
       {
         "kind": "aws_vpc",
         "name": "Create VPC",
@@ -56,7 +56,9 @@
           "exit"
         ]
       }
-    ],
+    ]
+  },
+  "nodes": {
     "nodes": [
       {
         "id": "node-001",
