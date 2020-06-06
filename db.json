@@ -10,6 +10,32 @@
           "aws",
           "cloud",
           "vpc"
+        ],
+        "ingressPorts": [
+          {
+            "name": "Entry",
+            "kind": "EXEC"
+          },
+          {
+            "name": "Name",
+            "kind": "STRING",
+            "defaultValue": "MyFirstVPC"
+          },
+          {
+            "name": "CIDR",
+            "kind": "STRING",
+            "defaultValue": "10.0.0.0/16"
+          }
+        ],
+        "egressPorts": [
+          {
+            "name": "Exit",
+            "kind": "EXEC"
+          },
+          {
+            "name": "VPC",
+            "kind": "OBJECT"
+          }
         ]
       },
       {
@@ -21,6 +47,32 @@
           "aws",
           "cloud",
           "subnet"
+        ],
+        "ingressPorts": [
+          {
+            "name": "Entry",
+            "kind": "EXEC"
+          },
+          {
+            "name": "VPC",
+            "kind": "OBJECT",
+            "defaultValue": null
+          },
+          {
+            "name": "CIDR",
+            "kind": "STRING",
+            "defaultValue": "10.0.0.0/24"
+          }
+        ],
+        "egressPorts": [
+          {
+            "name": "Exit",
+            "kind": "EXEC"
+          },
+          {
+            "name": "Subnet",
+            "kind": "OBJECT"
+          }
         ]
       },
       {
@@ -32,6 +84,23 @@
           "start",
           "in",
           "entry"
+        ],
+        "ingressPorts": [
+          {
+            "name": "Entry",
+            "kind": "EXEC"
+          },
+          {
+            "name": "Message",
+            "kind": "STRING",
+            "defaultValue": ""
+          }
+        ],
+        "egressPorts": [
+          {
+            "name": "Exit",
+            "kind": "EXEC"
+          }
         ]
       },
       {
@@ -43,6 +112,15 @@
           "start",
           "in",
           "entry"
+        ],
+        "ingressPorts": [
+
+        ],
+        "egressPorts": [
+          {
+            "name": "Entry",
+            "kind": "EXEC"
+          }
         ]
       },
       {
@@ -54,6 +132,15 @@
           "end",
           "out",
           "exit"
+        ],
+        "ingressPorts": [
+          {
+            "name": "Exit",
+            "kind": "EXEC"
+          }
+        ],
+        "egressPorts": [
+
         ]
       }
     ]
