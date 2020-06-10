@@ -1,6 +1,6 @@
 {
-  "definitions": {
-    "nodes": [
+  "nodeDefinitions": {
+    "items": [
       {
         "kind": "aws_vpc",
         "name": "Create VPC",
